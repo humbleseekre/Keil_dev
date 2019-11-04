@@ -20,15 +20,15 @@ void blinkLeds(void)
     {
         if(Buttons_GetState() == 1)
         {
-            LED_On(0);
-            LED_On(1);
-            LED_On(2);
-            LED_On(3);
+            LED_On(LED_GREEN);
+            LED_On(LED_RED_1);
+            LED_On(LED_RED_2);
+            LED_On(LED_BLUE);
             delay();
-            LED_Off(0); 
-            LED_Off(1);
-            LED_Off(2);
-            LED_Off(3);   
+            LED_Off(LED_GREEN); 
+            LED_Off(LED_RED_1);
+            LED_Off(LED_RED_2);
+            LED_Off(LED_BLUE);   
             delay();
         }
     }
